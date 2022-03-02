@@ -27,7 +27,7 @@ export function Todo() {
     }
   };
 
-  const handleFinishedTask = (idTask :number) => {
+  const handleFinishedTask = (idTask:number) => {
     setTasks(tasks.map((t) => t.id === idTask ? {...t,indFinished:!t.indFinished} : t))
   }
 
